@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+
+
+<title>About Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="Aboutus.css">
+<style>
+  
+   </style>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>SRI LANKA  <img src ="Images/map.png" width="30px" height="40px"></h1>
+    
+      </div>
+   
+  <ul>
+    <li><a href="Home.html" >Home</a></li>
+    <li><a href="Destinations.html">Destinations</a></li>
+    <li><a href="Thingstodo.html">Things To Do</a></li>
+    <li><a href=" Accommodation.html">Accommodation </a></li>
+    <li><a href="Aboutus.html" class="active">About Us</a></li>
+</ul>
+
+<div class="about">
+  <h1 id="h1">About Us </h1>
+  <p id="para1">Sri Lanka is a pearl-shaped Island nation in South Asia <br>one of the most attractive Tourisum destination.Sri Lanka is a democratic republic and a unitary state<br> which is governed by a semi-presidential system, with a mixture of a presidential system and a parliamentary system.
+    <p id="para2">If you like to join with our marvelous destination.<br>
+      Following these steps.You can add your favourite places you would like to visit on here... </p>
+    </div>
+          
+    </div>
+    
+<div id ="clickme">
+      <button onclick="myFunction()">Click Me !</button>
+<p id ="demo"></p>
+<script>
+  function myFunction(){
+    var txt;
+    var person = prompt("Please Enter Your Name :   Your Name  " );
+
+
+     if(person == null || person == "") {
+       txt ="You Click on Cancel Button.";
+     }else{
+       txt ="Thank You " + " "  +  person   +   " ! We Hope To See You In Sri Lanka Soon. " ;
+
+     }
+     document.getElementById("demo").innerHTML = txt;
+     
+  }
+  </script>
+
+  <div class="info">
+    <h2>Add your To do list</h2><br>
+    <h2>Fill this form</h2><br>
+
+<form action="submitted.html" id="form1">
+<p>
+<label for="fname" class="label1">First Name  </label>
+<input type="text" v-model="fname" class="tags">
+</p>
+<p>
+<label for="lname" class="label1">Last Name <span class="stari"></span> </label>
+<input type="text" v-model="lname" class="tags">
+</p>
+<br>
+<span>Gender </span>
+<input type="radio" id="one" value="male" v-model="gender">
+<label for="male" class="tags">Male</label>
+<input type="radio" id="two" value="female" v-model="gender">
+<label for="female" class="tags">Female</label>
+<p>
+<label for="country" class="label1">Your Country </label>
+<input type="text" v-model="country" class="tags">
+</p>
+<p><br>
+<label for="email" class="label1">Email address  </label></br>
+<input type="email"  v-model="email" class="tags">
+</p><br>
+<p>
+<label for="telephone" class="label1">Telephone </span></label></br>
+<input type="tel" v-model="telephone" class="form">
+</p><br>
+<span>Please enter places you like to travel</span>
+<br><br>
+<ol>
+<li>
+<textarea rows="2" cols="40" placeholder="Enter your places here"class="aa" v-model="list01"></textarea>
+</li>
+<li>
+<textarea rows="2" cols="40" placeholder="Enter your places here" class="aa" v-model="list02"></textarea>
+</li>
+<li>
+<textarea rows="2" cols="40" placeholder="Enter your places here" class="aa" v-model="list03"></textarea>
+</li>
+<li>
+<textarea rows="2" cols="40" placeholder="Enter your places here" class="aa" v-model="list04"></textarea>
+</li>
+<li>
+<textarea rows="2" cols="40" placeholder="Enter your places here" class="aa" v-model="list05"></textarea>
+</li>
+</ol>
+<br>
+
+<p> <label for="submit" class="label1"></label>
+<input type="submit" id="submit">
+
+<label for="reset" class="label1"></label>
+<input type="reset" id="reset"></p><br>
+</form>
+</div>
+
+                                
+<script>
+var app = new Vue({
+el :"#app",
+data:{
+   fname:"",
+   lname:"",
+   gender:"",
+   country:"",
+   email:"",
+   telephone:"",
+   list01:"",
+   list02:"",
+   list03:"",
+   list04:"",
+   list05:"",
+   textarea:"",
+
+   },
+});
+</script>
+</div>   
+      
+ <div class="gallery">
+ <img src="Images\ousl.jfif" alt="Error " width="300px" height="300px">
+    </div>
+
+    <div class="paraprovince"><p>I am a student at Open University of Sri Lanka.I am studying Bachelor of Software Engineering degree programme.<br>I am here with support you to visit the best tourist places in Sri Lanka.If you like Sri Lanka.Please follow me..<br>
+      <p id ="contact">Follow me on        
+      <a href=https://www.instagram.com/   target="_blank">Instergram</a> <br>
+       <h9>Created By :  K.H.Sewwandi</h9> 
+       </p>
+
+  </div>
+  <div id ="container">
+    <div id ="main">
+                                                
+         </div>
+          </div>
+          <footer id ="footer">
+                 <div>
+             <div id="socialmedia">
+             <p>Find us on      <br>
+      <a href = https://www.facebook.com/ target="_blank" class="fa fa-facebook"></a>
+               <br>
+     <a href= https://twitter.com/  target="_blank" class="fa fa-twitter"></a>
+              <br>
+  <a href= https://www.linkedin.com/home target="_blank" class="fa fa-linkedin"></a>
+               <br>
+   <a href=https://www.youtube.com/ target="_blank" class="fa fa-youtube"></a>
+                       <br>
+       <a href=https://www.instagram.com/ target="_blank" class="fa fa-instagram"></a>
+                    </p>
+                            
+                     </div>
+                                                          
+            </div>
+               <div id="othersites">
+           <p>Our Other Sites</p>
+       <a href="https://www.sltda.gov.lk/en">Sri lanaka Tourism Development Authority </a>
+                     <br>
+            <a href="https://immigration.gov.lk/">Department Of Imigration and Imigration</a>       
+                                                 <br>        
+           <a href="https://sltda.gov.lk/storage/common_media/Tourism_Associations_of_Sri%20Lanka2105427549.pdf">Tourist Hotels Association Of Sri Lanka</a>
+                             <br>
+     <a href="https://www.tourismmin.gov.lk/">Ministry Of Tourism</a>
+                                    <br>
+    <a href="https://www.srilankan.com/en_uk/lk">Sri Lanka Air Lines</a>
+                                                           
+              </div>
+      <div id="mypagelink">
+         <p>Popular Topics</p>
+        <a href ="Home.html">Home </a>
+            <br>
+           <a href ="Thingstodo.html">Things To Do</a>
+            <br>
+        <a href ="Aboutus.html">Accommodation</a>
+                       <br>
+            <a href ="Destinations.html">Destinations</a>
+                   </div>
+          </footer>
+                    </body>
+        </html>
+                                                               
+                                                   
+                                                   
+                                                   
+                                                                                                         
+
+
